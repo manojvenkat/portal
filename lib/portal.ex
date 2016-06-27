@@ -15,7 +15,7 @@ defmodule Portal do
     # for other strategies and supported options
     opts = [strategy: :simple_one_for_one, name: Portal.Supervisor]
     Supervisor.start_link(children, opts)
-  end
+  end 
 
   defstruct [:left, :right]
 
