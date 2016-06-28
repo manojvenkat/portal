@@ -49,8 +49,27 @@ defmodule SampleModule do
     list
   end
 
+  def sample_case(x) do
+    case x do
+      :a -> :ok
+      :b -> :error
+      other -> :unrecognised
+    end
+    IO.puts "Why!!"
+  end
+
+  def decide_10(x) do
+    cond do 
+      (x > 10) -> 
+        :greater_than_10
+      (x < 10) -> 
+        :lesser_than_10
+    end
+  end
+
 	defp priv do
     :secret_info
   end
 
 end
+
