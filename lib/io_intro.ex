@@ -41,5 +41,3 @@ defmodule InputOutputTest do
     assert strip(art) |> last == "d" 
   end
 end
-
-Interrogator.interrogate
